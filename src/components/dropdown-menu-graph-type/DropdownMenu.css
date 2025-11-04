@@ -1,0 +1,29 @@
+/* Style the dropdown menu */
+select {
+    background-color: lightblue; /* Change dropdown background color */
+    color: darkblue; /* Change text color */
+    font-size: 16px; /* Adjust font size */
+    padding: 8px; /* Add padding for better appearance */
+    border: 2px solid darkblue; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer on hover */
+  }
+  
+  /* Style dropdown options */
+  option {
+    background-color: white; /* Background color for options */
+    color: black; /* Text color inside options */
+    font-size: 16px;
+  }
+  
+  /* Change color when hovered */
+  select:hover {
+    background-color: lightgray;
+  }
+  
+  /* Change color when selected */
+  select:focus {
+    outline: none;
+    border-color: navy;
+  }
+  

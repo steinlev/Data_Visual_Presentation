@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size: 16px;
+  --padding: 0px;
+  --screen_width: 90vw;
+  --screen_height: 90vh;
+}
+
+/*TODO, fix the dimensions of the graph*/
+.chart-container {
+    width: var(--screen_width);
+    height: var(--screen_height);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+  }
+
+body {
+  color: darkblue;
+  background-color: white;
+}
+
+
+.tool-tip{
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.recharts-active-bar {
+  fill: rgba(72, 0, 255, 0.2); /* light green overlay on the active area */
+}
+
+.Bar-Rect{
+  /* TODO: Change the number "100" to be related to the number of data points are being measured */
+  font-size: calc(var(--screen_width)/100);
+  font-weight: bold;
+  fill: #333;
+}
+
+
+.Bar-Rect:hover{
+    background-color: red;
+}
+
+  
+
+/* Apply a color to the ticks based on the value */
+.custom-tick {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-anchor: end;
+}
+
+/* TODO, DOUBLE CHECK AND REMOVE THIS*/
+/* Add specific styling for ticks with words */
+.custom-tick-low {
+  color: lightblue; /* Green for Low */
+  font-size: 50px;
+}
+
+.custom-tick-medium {
+  color: orange; /* Orange for Medium */
+}
+
+.custom-tick-high {
+  color: red; /* Red for High */
+}

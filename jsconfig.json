@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src",  // This assumes your src folder is where your components are
+      "paths": {
+        "@/*": ["./*"]
+      }
+    },
+    "include": ["src"]
+  }
+  
+
+  // baseUrl: "src": This makes src the root directory for module resolution.
+/* "paths": { "@/*": ["./*"] }: This tells React to map @/ to the src/ folder. 
+So @/components/ui/select will resolve to src/components/ui/select.js. */
