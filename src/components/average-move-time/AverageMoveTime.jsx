@@ -171,6 +171,7 @@ const AverageMoveTime = () => {
 
   return (
     <div>
+      <button>Learn More</button>
       <h1 style={{ textAlign: "center", marginBottom: "40px" }}>
         Average Move Time
       </h1>
