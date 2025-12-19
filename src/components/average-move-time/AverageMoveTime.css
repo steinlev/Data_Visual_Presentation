@@ -3,16 +3,16 @@
   --secondary-color: #2ecc71;
   --font-size: 16px;
   --padding: 0px;
-  --screen_width: 90vw;
-  --screen_height: 90vh;
+  --screen_width: 101%;
+  /* --screen_width: 90vw; */
+  --screen_height: 85vh;
 }
 
-/*TODO, fix the dimensions of the graph*/
 .chart-container {
     width: var(--screen_width);
     height: var(--screen_height);
     margin: auto;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
