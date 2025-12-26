@@ -52,12 +52,11 @@ const CustomTooltip = ({ active, payload, columnHeaders, mean, sd }) => {
 const CustomLegend = ({ mean }) => {
   return (
     <div
-      style={{ display: "flex", justifyContent: "flex-end", marginRight: 20 }}
+      style={{ display: "flex", justifyContent: "flex-end", marginRight: 70 }}
     >
       <div style={{ display: "flex", alignItems: "center", marginRight: 10 }}>
         <div
           style={{
-            marginLeft: 10,
             width: 12,
             height: 12,
             backgroundColor: "rgba(76, 175, 80, .4)",
