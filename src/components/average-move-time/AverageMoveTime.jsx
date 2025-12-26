@@ -176,8 +176,7 @@ const AverageMoveTime = () => {
         Average Move Time
       </h1>
       <div className="chart-container">
-        {/* <ResponsiveContainer width="100%" height="100%"> */}
-        <ResponsiveContainer>
+        <ResponsiveContainer width="100%" height="100%">
           <BarChart
             // margin={{ top: 40, right: 80, left: 15, bottom: 15 }} // 👈 Add top space
             data={my_data}
