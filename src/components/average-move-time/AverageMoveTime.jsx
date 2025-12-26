@@ -171,14 +171,15 @@ const AverageMoveTime = () => {
 
   return (
     <div>
-      <button>Learn More</button>
+      <button style={{ marginTop: 50 }}>Learn More</button>
       <h1 style={{ textAlign: "center", marginBottom: "40px" }}>
         Average Move Time
       </h1>
       <div className="chart-container">
-        <ResponsiveContainer width="100%" height="100%">
+        {/* <ResponsiveContainer width="100%" height="100%"> */}
+        <ResponsiveContainer>
           <BarChart
-            margin={{ top: 40, right: 80, left: 15, bottom: 15 }} // 👈 Add top space
+            // margin={{ top: 40, right: 80, left: 15, bottom: 15 }} // 👈 Add top space
             data={my_data}
             onMouseMove={(state) => {
               if (state?.activeTooltipIndex !== undefined) {
