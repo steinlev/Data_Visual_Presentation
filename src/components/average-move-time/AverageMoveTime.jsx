@@ -19,6 +19,7 @@ import dimColor from "../bar-coloring-functions/dimColor";
 import brightColor from "../bar-coloring-functions/brightColor";
 
 import dataOptions from "./AverageMoveTimeData.json";
+import { color } from "d3";
 
 // Custom Tooltip Component
 const CustomTooltip = ({ active, payload, columnHeaders, mean, sd }) => {
@@ -171,9 +172,17 @@ const AverageMoveTime = () => {
 
   return (
     <div>
-      <button onClick={() => setShowModal(true)} style={{ marginTop: 50 }}>
+      <button
+        onClick={() => setShowModal(true)}
+        style={{
+          marginTop: 50,
+          backgroundColor: "black",
+          color: "white",
+        }}
+      >
         Learn More
       </button>
+
       {showModal && (
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div
