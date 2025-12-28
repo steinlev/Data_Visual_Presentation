@@ -139,6 +139,7 @@ const AverageMoveTime = () => {
   const [selectedKey, setSelectedKey] = useState(keys[0]); // First valid key
   const my_data = dataOptions[selectedKey]; // Select data based on dropdown
   const [activeIndex, setActiveIndex] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   //sort data:
   my_data.sort((a, b) => {
@@ -170,7 +171,91 @@ const AverageMoveTime = () => {
 
   return (
     <div>
-      <button style={{ marginTop: 50 }}>Learn More</button>
+      <button onClick={() => setShowModal(true)} style={{ marginTop: 50 }}>
+        Learn More
+      </button>
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div
+            className="modal-section-titles"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className="modal-close" onClick={() => setShowModal(false)}>
+              ×
+            </button>
+            <h2>Project Synopsis</h2>
+            {/* <div className="modal-section-content"> */}
+            <p>
+              This project is a specialized data visualization platform designed
+              to transform raw performance data into an actionable,
+              statistically grounded narrative. This data visualization tool
+              presents an interactive analysis of average move times across
+              different categories or individuals. The visualization uses
+              statistical measures—specifically the mean and standard
+              deviation—to provide context around individual values. The Program
+              shows randomly generated synthetic data.
+            </p>
+            {/* </div> */}
+
+            <br></br>
+
+            <p>
+              <strong>Key Features:</strong>
+            </p>
+            <ul>
+              <li>
+                <div className="modal-section-content">
+                  <strong>Color-coded Bars:</strong> Bars are colored based on
+                  how many standard deviations they fall from the mean, allowing
+                  for quick visual assessment of outliers and typical values.
+                </div>
+              </li>
+              <li>
+                <div className="modal-section-content">
+                  <strong>Reference Lines:</strong> The chart includes reference
+                  lines for the mean and ±2 standard deviations to help
+                  contextualize the data distribution.
+                </div>
+              </li>
+              <li>
+                <div className="modal-section-content">
+                  <strong>Interactive Legend:</strong> A custom legend explains
+                  the color coding and statistical references used in the
+                  visualization.
+                </div>
+              </li>
+              <li>
+                <div className="modal-section-content">
+                  <strong>Dropdown Selection:</strong> Switch between different
+                  datasets to explore move times across various categories or
+                  groups.
+                </div>
+              </li>
+              <li>
+                <div className="modal-section-content">
+                  <strong>Hover Tooltips:</strong> Hovering over bars reveals
+                  detailed information including the exact value and its
+                  position relative to the mean.
+                </div>
+              </li>
+            </ul>
+
+            <br></br>
+
+            <ul>
+              <div className="modal-section-content">
+                <strong>Tools: </strong> React.js, Recharts, Dynamic CSS,
+                tooltip, JS Functional Programming
+              </div>
+              <div className="modal-section-content">
+                <strong>Use: </strong> Use this tool to identify patterns,
+                outliers, and performance trends in time data. The program works
+                for all data in json format.
+              </div>
+            </ul>
+          </div>
+        </div>
+      )}
       <h1 style={{ textAlign: "center", marginBottom: "40px" }}>
         Average Move Time
       </h1>
