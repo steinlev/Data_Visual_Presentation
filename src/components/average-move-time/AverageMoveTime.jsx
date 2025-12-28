@@ -19,7 +19,7 @@ import dimColor from "../bar-coloring-functions/dimColor";
 import brightColor from "../bar-coloring-functions/brightColor";
 
 import dataOptions from "./AverageMoveTimeData.json";
-import { color } from "d3";
+// import { color } from "d3";
 
 // Custom Tooltip Component
 const CustomTooltip = ({ active, payload, columnHeaders, mean, sd }) => {
@@ -172,15 +172,21 @@ const AverageMoveTime = () => {
 
   return (
     <div>
+      <h1 style={{ textAlign: "center", marginBottom: "5px" }}>
+        Average Move Time
+      </h1>
+
       <button
         onClick={() => setShowModal(true)}
         style={{
-          marginTop: 50,
-          backgroundColor: "black",
-          color: "white",
+          marginTop: 30,
+          backgroundColor: "lightgray",
+          color: "black",
+          marginBottom: "20px",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       >
-        Learn More
+        CLICK HERE TO LEARN MORE ABOUT THE PROJECT
       </button>
 
       {showModal && (
@@ -193,7 +199,6 @@ const AverageMoveTime = () => {
               ×
             </button>
             <h2>Project Synopsis</h2>
-            {/* <div className="modal-section-content"> */}
             <p>
               This project is a specialized data visualization platform designed
               to transform raw performance data into an actionable,
@@ -204,7 +209,6 @@ const AverageMoveTime = () => {
               deviation—to provide context around individual values. The Program
               shows randomly generated synthetic data.
             </p>
-            {/* </div> */}
 
             <br></br>
 
@@ -265,9 +269,6 @@ const AverageMoveTime = () => {
           </div>
         </div>
       )}
-      <h1 style={{ textAlign: "center", marginBottom: "40px" }}>
-        Average Move Time
-      </h1>
       <div className="chart-container">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -375,14 +376,12 @@ const AverageMoveTime = () => {
                 );
               }}
             />
-            {/*TODO, figure out what foreignObject does*/}
             <foreignObject
               x="50%"
-              y="0"
+              y="10"
               width={dropdown_width}
               height="40"
               transform={`translate(${-dropdown_width / 2}, 0)`}
-              //transform="translate(-100, 0)"
             >
               <div>
                 {<Dropdown onSelect={setSelectedKey} /*drop down menu*/ />}
