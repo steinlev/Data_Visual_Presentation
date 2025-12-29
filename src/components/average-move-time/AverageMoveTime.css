@@ -24,6 +24,18 @@ body {
   background-color: white;
 }
 
+/* Global Link Styles */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
 
 .tool-tip{
     background-color: #ffffff;
