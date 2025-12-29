@@ -198,6 +198,7 @@ const AverageMoveTime = () => {
             <button className="modal-close" onClick={() => setShowModal(false)}>
               ×
             </button>
+            <h1>Average Move Time - Data Visualization Project</h1>
             <h2>Project Synopsis</h2>
             <p>
               This project is a specialized data visualization platform designed
