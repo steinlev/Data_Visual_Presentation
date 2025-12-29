@@ -146,3 +146,58 @@ body {
 .modal-section-titles li {
   margin: 10px 0;
 }
+
+/* About Me Modal Styles */
+.about-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.headshot-container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 22px;
+}
+
+.biography-container {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.biography-container p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.social-links a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}

@@ -141,6 +141,7 @@ const AverageMoveTime = () => {
   const my_data = dataOptions[selectedKey]; // Select data based on dropdown
   const [activeIndex, setActiveIndex] = useState(null);
   const [showModal, setShowModal] = useState(true); // open modal by default on load
+  const [showAboutModal, setShowAboutModal] = useState(false); // About me modal
 
   //sort data:
   my_data.sort((a, b) => {
@@ -177,16 +178,118 @@ const AverageMoveTime = () => {
       </h1>
 
       <button
+        onClick={() => setShowAboutModal(true)}
+        style={{
+          marginTop: 20,
+          marginLeft: 10,
+          marginRight: 10,
+          backgroundColor: "lightgray",
+          color: "black",
+          marginBottom: "0px",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        ABOUT ME
+      </button>
+      {showAboutModal && (
+        <div className="modal-overlay" onClick={() => setShowAboutModal(false)}>
+          <div
+            className="modal-section-titles"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="modal-close"
+              onClick={() => setShowAboutModal(false)}
+            >
+              ×
+            </button>
+            <h1>Levi Stein</h1>
+            <div className="social-links">
+              <a
+                href="https://www.linkedin.com/in/levi-stein-pro/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <span> | </span>
+              <a
+                href="https://github.com/steinlev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+            <h3></h3>
+            <h3></h3>
+
+            <div className="about-container">
+              <div className="headshot-container">
+                <img
+                  src="./Current_headhshot.jpg"
+                  alt="Levi Stein"
+                  className="headshot"
+                />
+              </div>
+
+              <div className="biography-container">
+                <p>
+                  Hi, I’m Levi! I am currently a senior pursuing degrees in
+                  Industrial & Operations Engineering and Data Science at the
+                  University of Michigan, where I developed a strong interest in
+                  using data to understand systems and make better decisions.
+                </p>
+                <p>
+                  I enjoy tackling complex problems and finding creative ways to
+                  explain data-driven solutions to people with all levels of
+                  technical expertise.
+                </p>
+                <p>
+                  I have experience in front-end development, data analytics,
+                  and machine learning through various projects and internships.
+                  To check out some of my work, feel free to visit my{" "}
+                  <a
+                    href="https://github.com/steinlev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>{" "}
+                  or{" "}
+                  <a
+                    href="https://www.linkedin.com/in/levi-stein-pro/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  (portfolio website coming soon!)
+                </p>
+                <p>
+                  Outside of work, I am very involved in the Jewish community at
+                  UofM. I also enjoy playing piano and basketball, and smoking
+                  meat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <button
         onClick={() => setShowModal(true)}
         style={{
-          marginTop: 30,
+          marginTop: 20,
+          marginLeft: 10,
+          marginRight: 10,
           backgroundColor: "lightgray",
           color: "black",
           marginBottom: "20px",
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       >
-        CLICK HERE TO LEARN MORE ABOUT THE PROJECT
+        ABOUT THE PROJECT
       </button>
 
       {showModal && (
@@ -271,7 +374,7 @@ const AverageMoveTime = () => {
         </div>
       )}
       <div className="chart-container">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="90%">
           <BarChart
             // margin={{ top: 40, right: 80, left: 15, bottom: 15 }} // 👈 Add top space
             data={my_data}
