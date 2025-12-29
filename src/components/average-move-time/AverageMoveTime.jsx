@@ -140,7 +140,7 @@ const AverageMoveTime = () => {
   const [selectedKey, setSelectedKey] = useState(keys[0]); // First valid key
   const my_data = dataOptions[selectedKey]; // Select data based on dropdown
   const [activeIndex, setActiveIndex] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true); // open modal by default on load
 
   //sort data:
   my_data.sort((a, b) => {
