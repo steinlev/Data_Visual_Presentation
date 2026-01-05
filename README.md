@@ -1,52 +1,106 @@
 # Data Visual Presentation
 
-This repository hosts the source for the **Data Visual Presentation** website, published at:  
+## Project Description
+
+This project is a web-based data visualization application developed to demonstrate principled visual communication, modular front-end design, and interactive data presentation. The application is implemented using React and is structured to support reusable visualization components, controlled styling, and data-driven rendering.
+
+The project emphasizes clarity, separation of concerns, and interpretability, with visual elements designed to support analytical reasoning rather than purely aesthetic presentation. It is suitable for inclusion in an academic portfolio as evidence of competency in front-end development, data visualization, and software organization.
+
+The deployed version of the application is available at:  
 https://steinlev.github.io/Data_Visual_Presentation/
 
-The project demonstrates effective data visualization techniques and interactive visual content delivered through client-side technologies (HTML, CSS, JavaScript). It is designed to help viewers **explore, interact with, and interpret data visually**.
+---
 
-## Table of Contents
+## Objectives
 
-- [Project Overview](#project-overview)  
-- [Features](#features)  
-- [Technologies Used](#technologies-used)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Data Sources](#data-sources)  
-- [Contributing](#contributing)  
-- [License](#license)
+The primary objectives of this project are to:
 
-## Project Overview
+- Design interactive data visualizations using component-based architecture.
+- Apply visualization best practices to structured data.
+- Demonstrate proficiency with modern front-end frameworks in an analytical context.
+- Create reusable, extensible visualization components suitable for future expansion.
 
-This repository contains the complete source for a web-based data visualization presentation. The site includes multiple visualization examples illustrating how data can be communicated visually to support interpretation and insight exploration. The presentation demonstrates both static and interactive visualization techniques.
+---
 
-## Features
+## Technical Implementation
 
-- **Interactive Visualizations** – Visual components that respond to user input (hover, click, zoom).  
-- **Responsive Design** – Ensures compatibility across desktop and mobile browsers.  
-- **Multiple Chart Types** – Examples may include line charts, bar charts, scatterplots, maps, etc.  
-- **Clean Layout** – Focused on readability and visual clarity.
+The application is built using the React framework and follows a modular component-based design. Styling and logic are separated to promote maintainability and clarity.
 
-## Technologies Used
+### Core Technologies
 
-The project is built with the following technologies:
+- **React (JSX)** — Component-based UI construction
+- **JavaScript (ES6+)** — Application logic and data handling
+- **CSS** — Component-level and global styling
+- **JSON** — Structured data input for visualizations
 
-- **HTML5** – Structure and semantic layout.  
-- **CSS3** – Styling and responsive design.  
-- **JavaScript** – Interactivity and dynamic behavior.  
-- **Visualization Libraries** (e.g., D3.js, Chart.js, Plotly) – Optional; customize based on implementation.
+---
 
+## Source Structure
 
+The `src/` directory contains the core application logic and visualization components:
 
-# React + Vite
+The structure reflects an intentional separation between:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Visualization logic**
+- **Presentation and styling**
+- **Reusable UI controls**
+- **Data sources**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visualization Components
 
-## Expanding the ESLint configuration
+### Average Move Time
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The `AverageMoveTime` component renders a data-driven visualization using structured JSON input. The component is designed to:
+
+- Load external data (`AverageMoveTimeData.json`)
+- Render visual output based on configurable parameters
+- Apply component-specific styling for visual consistency
+
+This design supports interpretability and facilitates future extensions or alternative datasets.
+
+### Dynamic Coloring Functions
+
+The `bar-coloring-functions` directory contains utility functions used to apply dynamic visual encodings. These functions abstract color logic from visualization components, allowing consistent and reusable styling behavior across multiple charts.
+
+### Interactive Controls
+
+The `dropdown-menu-graph-type` and `ui/Select` components provide controlled user inputs that enable interaction with visual elements. These components are designed to support extensibility while maintaining a clean separation from visualization logic.
+
+---
+
+## Design Considerations
+
+The project follows established data visualization and software design principles:
+
+- **Modularity:** Each visualization and UI element is encapsulated in a dedicated component.
+- **Reusability:** Utility functions and UI elements are designed for reuse.
+- **Readability:** Component logic and styling are clearly separated.
+- **Scalability:** The architecture supports adding new visualizations with minimal refactoring.
+
+---
+
+## Deployment
+
+The application is deployed as a static site using **GitHub Pages**, enabling reproducible access without server-side dependencies.
+
+---
+
+## Limitations and Future Work
+
+This project is exploratory in nature and intended to demonstrate core visualization and front-end development principles. Potential future extensions include:
+
+- Additional visualization components using new datasets.
+- More advanced interaction patterns (e.g., filtering, brushing).
+- Enhanced accessibility support.
+- Formal evaluation of visualization effectiveness.
+
+---
+
+## Academic Context
+
+This project was developed as part of an academic data visualization effort and is intended for evaluation in a university portfolio or coursework setting. It demonstrates applied skills in front-end development, modular software design, and data-driven visualization.
+
+---
+
