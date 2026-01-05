@@ -7,13 +7,13 @@ The project demonstrates effective data visualization techniques and interactive
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data Sources](#data-sources)
-- [Contributing](#contributing)
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+- [Technologies Used](#technologies-used)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Data Sources](#data-sources)  
+- [Contributing](#contributing)  
 - [License](#license)
 
 ## Project Overview
@@ -22,19 +22,21 @@ This repository contains the complete source for a web-based data visualization 
 
 ## Features
 
-- **Interactive Visualizations** – Visual components that respond to user input (hover, click, zoom).
-- **Responsive Design** – Ensures compatibility across desktop and mobile browsers.
-- **Multiple Chart Types** – Examples may include line charts, bar charts, scatterplots, maps, etc.
+- **Interactive Visualizations** – Visual components that respond to user input (hover, click, zoom).  
+- **Responsive Design** – Ensures compatibility across desktop and mobile browsers.  
+- **Multiple Chart Types** – Examples may include line charts, bar charts, scatterplots, maps, etc.  
 - **Clean Layout** – Focused on readability and visual clarity.
 
 ## Technologies Used
 
 The project is built with the following technologies:
 
-- **HTML5** – Structure and semantic layout.
-- **CSS3** – Styling and responsive design.
-- **JavaScript** – Interactivity and dynamic behavior.
+- **HTML5** – Structure and semantic layout.  
+- **CSS3** – Styling and responsive design.  
+- **JavaScript** – Interactivity and dynamic behavior.  
 - **Visualization Libraries** (e.g., D3.js, Chart.js, Plotly) – Optional; customize based on implementation.
+
+
 
 # React + Vite
 
