@@ -7,13 +7,13 @@ The project demonstrates effective data visualization techniques and interactive
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)  
-- [Features](#features)  
-- [Technologies Used](#technologies-used)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Data Sources](#data-sources)  
-- [Contributing](#contributing)  
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Data Sources](#data-sources)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Overview
@@ -22,16 +22,29 @@ This repository contains the complete source for a web-based data visualization 
 
 ## Features
 
-- **Interactive Visualizations** – Visual components that respond to user input (hover, click, zoom).  
-- **Responsive Design** – Ensures compatibility across desktop and mobile browsers.  
-- **Multiple Chart Types** – Examples may include line charts, bar charts, scatterplots, maps, etc.  
+- **Interactive Visualizations** – Visual components that respond to user input (hover, click, zoom).
+- **Responsive Design** – Ensures compatibility across desktop and mobile browsers.
+- **Multiple Chart Types** – Examples may include line charts, bar charts, scatterplots, maps, etc.
 - **Clean Layout** – Focused on readability and visual clarity.
 
 ## Technologies Used
 
 The project is built with the following technologies:
 
-- **HTML5** – Structure and semantic layout.  
-- **CSS3** – Styling and responsive design.  
-- **JavaScript** – Interactivity and dynamic behavior.  
+- **HTML5** – Structure and semantic layout.
+- **CSS3** – Styling and responsive design.
+- **JavaScript** – Interactivity and dynamic behavior.
 - **Visualization Libraries** (e.g., D3.js, Chart.js, Plotly) – Optional; customize based on implementation.
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
